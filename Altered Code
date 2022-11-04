@@ -1,0 +1,20 @@
+// set pin numbers:
+int ledPinR = 11; // the number of the LED R pin
+int ledPinG = 10; // the number of the LED G pin
+int ledPinB = 9; // the number of the LED B pin
+
+// run this code once at the start
+void setup() {
+ 
+ // initialize the LED pin as an output:
+ pinMode(ledPinR, OUTPUT);
+ pinMode(ledPinG, OUTPUT);
+ pinMode(ledPinB, OUTPUT);
+}
+
+// run this code continously
+void loop() {
+ analogWrite(ledPinR, constrain(0, 0, 255)); // set red LED pin to on
+ analogWrite(ledPinG, constrain(0, 0, 255)); // set green LED pin to on
+ analogWrite(ledPinB, constrain(0, 0, 255)); // set blue LED pin to on
+}
